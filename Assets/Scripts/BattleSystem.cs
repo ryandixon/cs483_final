@@ -23,8 +23,6 @@ public class BattleSystem : MonoBehaviour {
     Character player;
     Character enemy;
 
-    private int tmpDefend = 0;
-
     //AudioSource battleTheme;
     public AudioClip skeleAttack, heal, defend, special;
     AudioSource audioSource;
@@ -75,14 +73,6 @@ public class BattleSystem : MonoBehaviour {
         StartCoroutine(PlayerHeal());
     }
 
-    public void OnDefendButton() {
-        if(state != BattleState.PlayerTurn) {
-            return;
-        }
-
-        StartCoroutine(PlayerDefend());
-    }
-
     //currently base heal on attack power
     //TODO add spell power and allow it to modify damage of heal and attack spells
     IEnumerator PlayerHeal() {
@@ -90,17 +80,6 @@ public class BattleSystem : MonoBehaviour {
 
         playerHUD.SetHP(player.health);
         dialog.text = player.characterName + " has healed for " + player.attackPower;
-
-        yield return new WaitForSeconds(2f);
-
-        state = BattleState.EnemyTurn;
-        StartCoroutine(EnemyTurn());
-    }
-
-    IEnumerator PlayerDefend() {
-        tmpDefend += 1;
-        player.Defend(tmpDefend);
-        dialog.text = player.characterName + "'s defense has increased";
 
         yield return new WaitForSeconds(2f);
 
@@ -129,7 +108,6 @@ public class BattleSystem : MonoBehaviour {
 
     IEnumerator EndBattle() {
         if(state == BattleState.Won) {
-            player.defencePower -= tmpDefend;
             if(GameObject.FindGameObjectWithTag("Dragon")) {
 
                 yield return new WaitForSeconds(2f);
@@ -258,5 +236,23 @@ public class BattleSystem : MonoBehaviour {
                 PlayerTurn();
                 break;
         }
+        
+        //dialog.text = enemy.characterName + " attacks!";
+        //skeleAttack.Play(0);
+
+        //yield return new WaitForSeconds(2f);
+        //bool isDead = player.Hurt(enemy.attackPower);
+        //dialog.text = enemy.characterName + " attacked " + player.characterName + " for " + enemy.attackPower.ToString();
+        //playerHUD.SetHP(player.health);
+
+        //yield return new WaitForSeconds(2f);
+
+        //if(isDead) {
+            //state = BattleState.Lost;
+            //EndBattle();
+        //} else {
+            //state = BattleState.PlayerTurn;
+            //PlayerTurn();
+        //}
     }
 }
