@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8b308f3b-58d3-62f3-fa3b-e3d635576f9d}</ProjectGuid>
+    <ProjectGuid>{e8576d36-c979-2dc3-9c44-dc660d22694d}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,18 +64,6 @@
      <Compile Include="Assets\Scripts\LoadBattle.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\NPC.cs" />
-     <Compile Include="Assets\Scripts\New Folder\Unit.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\BattleController.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\BattleLaunchCharacter.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\BattleLauncher.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\BattleLauncherDemo.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\BattleSpawnPoint.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\BattleUIController.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\DestroyEnemies.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\DontDestroy.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\EventController.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\Gateway.cs" />
-     <Compile Include="Assets\Scripts\Old Scripts\GatewayManager.cs" />
      <Compile Include="Assets\Scripts\PartyMember.cs" />
      <Compile Include="Assets\Scripts\PausedMenu.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
@@ -627,43 +615,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{dc11f59c-b70e-e51f-6073-dd0012628f7f}</Project>
+      <Project>{f6c2d053-04cd-ddc9-405d-6c95c64cb22a}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{781c759f-f0dd-74f2-bbf8-f41f1129e2b3}</Project>
+      <Project>{6f53f2bd-4850-5d2a-871e-e608a3751f30}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{9f5796d4-077b-c398-efa9-9d4fdd6c091c}</Project>
+      <Project>{24c4171b-648d-a876-52da-3a4e4268781b}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{332d5b60-d5b2-7ebf-5068-e96936841e17}</Project>
+      <Project>{b8577297-ccde-2b30-70a8-11f32526a2a9}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{610dc011-fc17-e2ae-827f-cdee4f6f2071}</Project>
+      <Project>{95cd4a5d-41cf-4ccd-5ed8-c3e87e860ed5}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{faeb78a3-9f64-d2b7-c7a6-a61df4a4002e}</Project>
+      <Project>{737b033a-1664-87fc-9061-30e37253729b}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{6ca51be0-d7f0-de17-0e37-078fb3b00e2f}</Project>
+      <Project>{2fb3bef8-fa15-ac51-d2be-61d2c95033a3}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{7c50b009-1c7f-5d0a-b889-491e0fa4c0d7}</Project>
+      <Project>{54bf0a26-7b1d-a075-874b-35a45d0ffc91}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{13505d8f-26a5-0dd8-3383-49626febeca5}</Project>
+      <Project>{9c55902b-b294-e19d-0f9d-10d1c3632329}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{5d1cd524-c411-bb15-ba5e-bfa78b9731cd}</Project>
+      <Project>{06173588-aae3-273c-cefa-2c291ebbf726}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
